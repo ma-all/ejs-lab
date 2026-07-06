@@ -60,7 +60,7 @@ app.get('/', function(req, res){
 //ex 2 - question 1
 app.get('/menu', function(req, res){
   res.render('menu.ejs', {
-    resturant: RESTAURANT.menu
+    menuitems: RESTAURANT.menu
   })
 })
 
@@ -71,8 +71,8 @@ app.get('/menu/:category', function(req, res){
     return item.category === category
   })
   res.render('menu.ejs', {
-    menuitems, 
-    category,
+    menuitems: menuitems,
+    category: category
   })
 })
 

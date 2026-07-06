@@ -1,7 +1,11 @@
 <%- include('./partials/nav')  %>
     <title>Category</title>
 
-    <% menuitems.forEach(fucntion(item){ %>
+    <!--ex 3 question 4-->
+    <h1> <%= category %> </h1>
+
+    <!--ex 3 question 3-->
+    <% menuitems.forEach(function(item){ %>
         <ul>
             <li>
                 <%= item.name %>
