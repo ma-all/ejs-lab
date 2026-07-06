@@ -1,0 +1,22 @@
+<%- include('./partials/nav')  %>
+    <title>Menu</title>
+
+
+    <h1>Full Menu</h1>
+
+    <!--ex 2 question 2-->
+    <% resturant.forEach(function(item){ %>
+        <ul>
+            <li>
+                <%= item.name %>
+                <br/>
+                <%= item.price %>
+                <br/>
+                <%= item.rating %>
+                <br/>
+                <%= item.details %>
+            </li>
+        </ul>
+    <% }) %>
+</body>
+</html>

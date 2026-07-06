@@ -1,0 +1,18 @@
+<%- include('./partials/nav')  %>
+    <title>Category</title>
+
+    <% menuitems.forEach(fucntion(item){ %>
+        <ul>
+            <li>
+                <%= item.name %>
+                <br/>
+                <%= item.price %>
+                <br/>
+                <%= item.rating %>
+                <br/>
+                <%= item.details %>
+            </li>
+        </ul>
+    <% }) %>
+</body>
+</html>

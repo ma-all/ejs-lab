@@ -1,0 +1,22 @@
+<%- include('./partials/nav') %>
+
+  <!--ex 1 question 3-->
+  <title><%= resturant.name %></title>
+</head>
+<body>
+  <h1>Home Page</h1>
+
+  <!--ex 1 question 2-->
+  <%= resturant.name %> 
+  <%= resturant.address %>
+  <%= resturant.phone %>
+  
+  <!--ex 1 question 4 -->
+  <% let isOpen = resturant.isOpen %>
+  <% if (isOpen){ %>
+    <p>Yes we are open!</p>
+  <% } else {  %>
+    <p>Sorry, we are closed.</p>
+  <% } %>
+</body>
+</html>
