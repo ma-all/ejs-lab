@@ -59,8 +59,13 @@ app.get('/', function(req, res){
 
 //ex 2 - question 1
 app.get('/menu', function(req, res){
+  const category = req.params.category
+  const menuitems = RESTAURANT.menu.filter(function(item){
+    return item.category === category
+  })
   res.render('menu.ejs', {
-    menuitems: RESTAURANT.menu
+    menuitems: RESTAURANT.menu,
+    category: category
   })
 })
 
